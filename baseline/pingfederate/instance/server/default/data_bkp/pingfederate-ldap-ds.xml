@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ldap:ldap-sources xmlns:ldap="http://pingidentity.com/2004/09/ldap-ds">
+    <ldap:ldap-source id="LDAP-D803C87FAB2ADFB4B0A947B64BA6F0C6093A5CA3" maskAttributeValues="false" ldapType="PingDirectory" ldapTypeDesc="PingDirectory" testOnBorrow="false" testOnReturn="false" createIfNecessary="true" minIdle="10" maxActive="100" maxWait="-1" timeBetweenEvictionRunsMillis="60000" readTimeoutMillis="3000" connTimeoutMillis="3000" verifyHost="true" dnsTtlMillis="60000" ldapDnsSrvPrefix="_ldap._tcp" ldapsDnsSrvPrefix="_ldaps._tcp">
+        <ldap:host>pingdirectory</ldap:host>
+        <ldap:principal>cn=pingfederate</ldap:principal>
+        <ldap:use-ssl>false</ldap:use-ssl>
+        <ldap:use-dns-srv-records>false</ldap:use-dns-srv-records>
+        <ldap:ad-referral>false</ldap:ad-referral>
+        <ldap:credentials>eyJhbGciOiJkaXIiLCJlbmMiOiJBMTI4Q0JDLUhTMjU2Iiwia2lkIjoiRW1JY1UxOVdueSIsInZlcnNpb24iOiIxMC4xLjAuOCJ9..1Tm_2FDDgwPUZRFWeycoRQ.c2NYmPayBFDxmrstP_GaqQ.LQ-EnyRjMLK3gen-dtXm7w</ldap:credentials>
+        <ldap:authenticationMeth>simple</ldap:authenticationMeth>
+        <ldap:description>pingdirectory</ldap:description>
+        <ldap:name>pingdirectory</ldap:name>
+        <ldap:binaryAttributes/>
+        <ldap:ldapHostTagList>
+            <ldap:tagEntry host="pingdirectory" tags=""/>
+        </ldap:ldapHostTagList>
+    </ldap:ldap-source>
+    <ldap:ldap-source id="LDAP-8E9E4C77F6E71F317BD8865F133F3A22EC47AE3B" maskAttributeValues="false" ldapType="ActiveDirectory" ldapTypeDesc="Active Directory" testOnBorrow="false" testOnReturn="false" createIfNecessary="true" minIdle="10" maxActive="100" maxWait="-1" timeBetweenEvictionRunsMillis="60000" readTimeoutMillis="3000" connTimeoutMillis="3000" verifyHost="true" dnsTtlMillis="60000" ldapDnsSrvPrefix="_ldap._tcp" ldapsDnsSrvPrefix="_ldaps._tcp">
+        <ldap:host>EC2AMAZ-2MNFVU0.tarun.lab</ldap:host>
+        <ldap:principal>CN=Administrator,CN=Users,DC=tarun,DC=lab</ldap:principal>
+        <ldap:use-ssl>true</ldap:use-ssl>
+        <ldap:use-dns-srv-records>false</ldap:use-dns-srv-records>
+        <ldap:ad-referral>false</ldap:ad-referral>
+        <ldap:credentials>eyJhbGciOiJkaXIiLCJlbmMiOiJBMTI4Q0JDLUhTMjU2Iiwia2lkIjoiRW1JY1UxOVdueSIsInZlcnNpb24iOiIxMC4xLjAuOCJ9..aD3AWlEwsU8gMqnt7N1B2Q.uPEz1Th6X3Nh2KLbquvzQg.iHux2xnbb7Jp8NOaYDVwOg</ldap:credentials>
+        <ldap:authenticationMeth>simple</ldap:authenticationMeth>
+        <ldap:description>AD</ldap:description>
+        <ldap:name>AD</ldap:name>
+        <ldap:binaryAttributes/>
+        <ldap:ldapHostTagList>
+            <ldap:tagEntry host="EC2AMAZ-2MNFVU0.tarun.lab" tags=""/>
+        </ldap:ldapHostTagList>
+    </ldap:ldap-source>
+    <ldap:ldap-source id="LDAP-8CAB180E7019F21460BA3CBCE0687A84BBE88555" maskAttributeValues="false" ldapType="ActiveDirectory" ldapTypeDesc="Active Directory" testOnBorrow="false" testOnReturn="false" createIfNecessary="true" minIdle="10" maxActive="100" maxWait="-1" timeBetweenEvictionRunsMillis="60000" readTimeoutMillis="3000" connTimeoutMillis="3000" verifyHost="true" dnsTtlMillis="60000" ldapDnsSrvPrefix="_ldap._tcp" ldapsDnsSrvPrefix="_ldaps._tcp">
+        <ldap:host>10.101.47.73</ldap:host>
+        <ldap:principal>CN=Administrator,CN=Users,DC=faspoz,DC=com</ldap:principal>
+        <ldap:use-ssl>false</ldap:use-ssl>
+        <ldap:use-dns-srv-records>false</ldap:use-dns-srv-records>
+        <ldap:ad-referral>false</ldap:ad-referral>
+        <ldap:credentials>eyJhbGciOiJkaXIiLCJlbmMiOiJBMTI4Q0JDLUhTMjU2Iiwia2lkIjoiRW1JY1UxOVdueSIsInZlcnNpb24iOiIxMC4xLjAuOCJ9..XRm0aj5rFc_32YQvt-7TWA.ZkXqH6J0n7L8IBKQ6Fc9SA.nHImbrISmA9P1pQh9cX-Xw</ldap:credentials>
+        <ldap:authenticationMeth>simple</ldap:authenticationMeth>
+        <ldap:description>faspozAD</ldap:description>
+        <ldap:name>faspozAD</ldap:name>
+        <ldap:binaryAttributes/>
+        <ldap:ldapHostTagList>
+            <ldap:tagEntry host="10.101.47.73" tags="faspoz"/>
+        </ldap:ldapHostTagList>
+    </ldap:ldap-source>
+    <ldap:ldap-source id="LDAP-5D9CDED034812CB99F213873F661F81EF0703644" maskAttributeValues="false" ldapType="Generic" ldapTypeDesc="Generic" testOnBorrow="false" testOnReturn="false" createIfNecessary="true" minIdle="10" maxActive="100" maxWait="-1" timeBetweenEvictionRunsMillis="60000" readTimeoutMillis="3000" connTimeoutMillis="3000" verifyHost="true" dnsTtlMillis="60000" ldapDnsSrvPrefix="_ldap._tcp" ldapsDnsSrvPrefix="_ldaps._tcp">
+        <ldap:host>ldap.jumpcloud.com</ldap:host>
+        <ldap:principal>uid=jumpservice,ou=Users,o=5e67073ec060a657bb5abddd,dc=jumpcloud,dc=com</ldap:principal>
+        <ldap:use-ssl>false</ldap:use-ssl>
+        <ldap:use-dns-srv-records>false</ldap:use-dns-srv-records>
+        <ldap:ad-referral>false</ldap:ad-referral>
+        <ldap:credentials>eyJhbGciOiJkaXIiLCJlbmMiOiJBMTI4Q0JDLUhTMjU2Iiwia2lkIjoiRW1JY1UxOVdueSIsInZlcnNpb24iOiIxMC4xLjAuOCJ9..UHN-9MyBThK5uRXPzTmKQQ.7DKm89_y1gHkP_kL9AYPaw.lFdeR1h-3pcNYuUXK3MFww</ldap:credentials>
+        <ldap:authenticationMeth>simple</ldap:authenticationMeth>
+        <ldap:description>jumpcloud</ldap:description>
+        <ldap:name>jumpcloud</ldap:name>
+        <ldap:binaryAttributes/>
+        <ldap:ldapHostTagList>
+            <ldap:tagEntry host="ldap.jumpcloud.com" tags=""/>
+        </ldap:ldapHostTagList>
+    </ldap:ldap-source>
+</ldap:ldap-sources>

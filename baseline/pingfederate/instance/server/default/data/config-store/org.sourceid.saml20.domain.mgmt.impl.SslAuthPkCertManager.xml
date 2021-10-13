@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:config xmlns:con="http://www.sourceid.org/2004/05/config">
+    <con:map name="docker"/>
+    <con:map name="https://httpbin.org"/>
+    <con:map name="https://httpbin.org/anything"/>
+    <con:map name="Opentoken-basic"/>
+    <con:map name="Opentoken-basic-apache"/>
+    <con:map name="http://pingone.com/e8935338-340d-4c0a-89e4-639ab4be15da"/>
+    <con:map name="Identologist.P14C"/>
+    <con:map name="https://saml.salesforce.com"/>
+    <con:map name="urn:amazon:webservices"/>
+    <con:map name="https://httpbin.org/anything-bkp"/>
+    <con:map name="FED-HUB-PFAS-SP"/>
+    <con:map name="https://auth.pingone.com/13f48a3a-6ed9-4d67-9b65-c2256df981d9"/>
+    <con:map name="http://pingone.com/e8935338-340d-4c0a-89e4-639ab4be15da/bkp"/>
+    <con:map name="PingOne Connector"/>
+    <con:map name="BlackLine_Login"/>
+    <con:map name="PingConnect"/>
+    <con:map name="https://httpbin.org/anything/vastmeed"/>
+</con:config>

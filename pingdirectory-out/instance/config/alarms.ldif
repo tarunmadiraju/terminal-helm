@@ -1,0 +1,28 @@
+dn: cn=alarms
+objectClass: top
+objectClass: ds-alarm-root
+cn: alarms
+
+dn: ds-alarm-id=A Debug Log Publisher is enabled which could cause performance issues if it is configured to log large volumes of data-File-Based Debug Logger-cn=file-based debug logger\,cn=loggers\,cn=config,cn=alarms
+objectClass: top
+objectClass: ds-admin-alarm
+ds-alarm-id: A Debug Log Publisher is enabled which could cause performance issues if it is configured to log large volumes of data-File-Based Debug Logger-cn=file-based debug logger,cn=loggers,cn=config
+ds-alarm-condition: A Debug Log Publisher is enabled which could cause performance issues if it is configured to log large volumes of data
+ds-alarm-specific-resource: File-Based Debug Logger-cn=file-based debug logger,cn=loggers,cn=config
+ds-alarm-severity: WARNING
+ds-alarm-details: A Debug Log Publisher is enabled. When Debug Targets are configured to restrict what is logged, the performance impact is typically negligible. However, it is good practice to disable the Debug Log Publisher once the required information has been collected
+ds-alarm-start-time: 20200904175005.279Z
+ds-alarm-warning-last-time: 20200904175005.279Z
+ds-alarm-warning-total-duration-millis: 0
+
+dn: ds-alarm-id=No Enabled Alert Handlers,cn=alarms
+objectClass: top
+objectClass: ds-admin-alarm
+ds-alarm-id: No Enabled Alert Handlers
+ds-alarm-condition: No Enabled Alert Handlers
+ds-alarm-severity: WARNING
+ds-alarm-details: No alert handlers have been enabled. Alerts will be written to logs/errors, but administrators will not be otherwise notified of current or impending problems. The server uses alerts to self-report many problems or precursors to potential problems. If an administrator does not receive these alerts, then there might be a server outage that was avoidable. In production environments, we strongly recommend enabling the SMTP Alert Handler to send emails, the JMX or SNMP Alert Handler to send notifications to a monitoring application, or creating a custom alert handler. In non-product environments, this alarm can be suppressed by adding 'no-enabled-alert-handlers' to the 'suppressed-alarm' configuration property on the Alarm Manager configuration object
+ds-alarm-start-time: 20200904175005.282Z
+ds-alarm-warning-last-time: 20200904175005.282Z
+ds-alarm-warning-total-duration-millis: 0
+
